@@ -1,0 +1,52 @@
+
+target/
+dbt_packages/
+logs/
+dbt_internal_packages/
+
+# -------------------------------
+# DBT build artifacts
+# -------------------------------
+dbt_packages/             # Packages installed via dbt deps
+target/                   # Compiled SQL, manifests, logs
+dbt_modules/              # Legacy; some dbt projects may still have this
+logs/                     # Log files
+
+# -------------------------------
+# Python environment files
+# -------------------------------
+.venv/                    # Your virtual environment folder (name may vary)
+env/                     
+venv/                     
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# -------------------------------
+# Jupyter Notebooks & Temp Files
+# -------------------------------
+.ipynb_checkpoints/
+*.ipynb
+.DS_Store
+*.swp
+*.swo
+
+# -------------------------------
+# IDE and OS-specific files
+# -------------------------------
+.vscode/
+.idea/
+*.log
+*.bak
+*.tmp
+
+# -------------------------------
+# Secrets / Credentials (custom)
+# -------------------------------
+profiles.yml              # If stored in repo (usually not recommended)
+.env                      # If you're using environment variables for secrets
+
+# -------------------------------
+# dbt Cloud (optional)
+# ----------
